@@ -1,4 +1,4 @@
-FROM golang:1.21 As base
+FROM golang:1.21 AS base
 
 WORKDIR /app
 
@@ -17,8 +17,4 @@ COPY --from=base /app/static ./static
 
 EXPOSE 8080
 
-CMD [ "./main" ]
-
-
-
-
+CMD ["./main"]
