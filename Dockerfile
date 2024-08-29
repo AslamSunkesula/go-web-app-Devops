@@ -1,4 +1,4 @@
-FROM golang:1.21 AS base
+FROM golang:1.22.5 AS base  # Updated Go version to 1.22.5
 
 WORKDIR /app
 
